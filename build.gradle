@@ -16,7 +16,6 @@ dependencies {
     testImplementation group: 'org.awaitility', name: 'awaitility', version: '4.2.0'
     testImplementation 'io.rest-assured:rest-assured:5.3.0'
     testImplementation 'net.masterthought:cucumber-reporting:5.7.5'
-    testImplementation 'org.mock-server:mockserver-netty:5.15.0'
 }
 
 test {

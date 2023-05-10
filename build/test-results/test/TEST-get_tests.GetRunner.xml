@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="get_tests.TestRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-05-10T15:31:41" hostname="SISTE283" time="0.0">
+<testsuite name="get_tests.GetRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-05-10T19:39:07" hostname="SISTE283" time="0.001">
   <properties/>
-  <testcase name="initializationError" classname="get_tests.TestRunner" time="0.0">
-    <failure message="java.lang.RuntimeException: not found: get_tests/get_products.feature" type="java.lang.RuntimeException">java.lang.RuntimeException: not found: get_tests/get_products.feature
+  <testcase name="initializationError" classname="get_tests.GetRunner" time="0.001">
+    <failure message="java.lang.RuntimeException: not found: get_tests/response_matcher.feature" type="java.lang.RuntimeException">java.lang.RuntimeException: not found: get_tests/response_matcher.feature
 	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
 	at com.intuit.karate.resource.ResourceUtils.findFeatureFiles(ResourceUtils.java:87)
 	at com.intuit.karate.Runner$Builder.resolveAll(Runner.java:246)

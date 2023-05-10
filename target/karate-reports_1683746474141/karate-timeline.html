@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/get_tests\/get_products[1:7]","start":1683746412507,"end":1683746413516,"title":"src\/test\/java\/get_tests\/get_products[1:7] 14:20:12.507-14:20:13.516 Get request from url"},{"id":2,"group":1,"content":"src\/test\/java\/get_tests\/get_products[2:15]","start":1683746413521,"end":1683746414311,"title":"src\/test\/java\/get_tests\/get_products[2:15] 14:20:13.521-14:20:14.311 Get request from path"},{"id":3,"group":1,"content":"src\/test\/java\/get_tests\/get_products[3:21]","start":1683746414315,"end":1683746414664,"title":"src\/test\/java\/get_tests\/get_products[3:21] 14:20:14.315-14:20:14.664 Get request with headers"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
