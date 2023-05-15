@@ -1,7 +1,7 @@
 Feature: Get tests Fake Store API
 
   #Base path para uso de todas las api que usan esta url
-  Background: Set up base path
+  Background: Set up base url
     Given url 'https://fakestoreapi.com'
 
     Scenario: Get request from url

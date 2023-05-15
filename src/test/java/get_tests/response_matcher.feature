@@ -1,6 +1,6 @@
 Feature: Validate the get endpoint response
 
-  Background: Set up base path
+  Background: Set up base url
     Given url 'https://fakestoreapi.com'
 
     Scenario: To get the data from JSON format
@@ -19,7 +19,7 @@ Feature: Validate the get endpoint response
       Then status 200
       And print response
 
-    Scenario: Get Request with match response
+    Scenario: Get Request with match general response
       Given path '/products/categories'
       When method GET
       Then status 200
@@ -40,8 +40,9 @@ Feature: Validate the get endpoint response
       When method GET
       Then status 200
       And print response
-      #Verificamos que dentro del objeto se encuentre lo que buscamos
+      #Verificamos que dentro del objeto se encuentre un texto especifico
       #Variable dentro del objeto principal
       And match response contains deep {"title": "Mens Casual Premium Slim Fit T-Shirts "}
       #Variable dentro de un objeto dentro del objeto principal
       And match response contains deep {"rating":{"count": 120}}
+
