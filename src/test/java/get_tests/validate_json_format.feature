@@ -3,7 +3,7 @@ Feature: Validate the get endpoint response
   Background: Set up base url
     Given url 'https://fakestoreapi.com'
 
-    Scenario: To get the data from JSON format
+    Scenario: Validate JSON format
       Given path '/products'
       And header Accept = 'application/json'
       When method GET
