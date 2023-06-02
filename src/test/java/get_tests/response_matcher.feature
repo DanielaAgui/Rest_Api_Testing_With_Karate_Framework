@@ -3,29 +3,29 @@ Feature: Validate the get endpoint response
   Background: Set up base url
     Given url 'https://fakestoreapi.com'
 
-    Scenario: To get the data from JSON format
-      Given path '/products/categories'
+  Scenario: To get the data from JSON format
+    Given path '/products/categories'
       #Indicamos que la request está en formato JSON
-      And header Accept = 'application/json'
-      When method GET
-      Then status 200
-      And print response
+    And header Accept = 'application/json'
+    When method GET
+    Then status 200
+    And print response
 
-    Scenario: To get the data from XML format
-      Given path '/products/categories'
+  Scenario: To get the data from XML format
+    Given path '/products/categories'
       #Indicamos que la request está en formato XML
-      And header Accept = 'application/xml'
-      When method GET
-      Then status 200
-      And print response
+    And header Accept = 'application/xml'
+    When method GET
+    Then status 200
+    And print response
 
-    Scenario: Get Request with match general response
-      Given path '/products/categories'
-      When method GET
-      Then status 200
-      And print response
+  Scenario: Get Request with match general response
+    Given path '/products/categories'
+    When method GET
+    Then status 200
+    And print response
       #Verificamos que la respuesta sea igual a la dada
-      And match response ==
+    And match response ==
       """
       [
         "electronics",
@@ -35,14 +35,14 @@ Feature: Validate the get endpoint response
       ]
       """
 
-    Scenario: Get Request with match response
-      Given path '/products'
-      When method GET
-      Then status 200
-      And print response
+  Scenario: Get Request with match response
+    Given path '/products'
+    When method GET
+    Then status 200
+    And print response
       #Verificamos que dentro del objeto se encuentre un texto especifico
       #Variable dentro del objeto principal
-      And match response contains deep {"title": "Mens Casual Premium Slim Fit T-Shirts "}
+    And match response contains deep {"title": "Mens Casual Premium Slim Fit T-Shirts "}
       #Variable dentro de un objeto dentro del objeto principal
-      And match response contains deep {"rating":{"count": 120}}
+    And match response contains deep {"rating":{"count": 120}}
 
