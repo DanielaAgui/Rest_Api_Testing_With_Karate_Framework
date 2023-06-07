@@ -14,7 +14,7 @@ Feature: Get tests Fake Store API
     And print response
 
   Scenario: Get request from path
-      #Context path, cambia para cada endpoint
+      #Path, cambia para cada endpoint
     Given path '/products/1'
     When method GET
     Then status 200

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("f9dd4b53-a84f-4208-bd34-b1dd0e842ad1",{name:"daaguilar"});
+    posthog.capture("report_feature",{karate_version:"1.3.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.get_tests.practica_get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-02 01:58:02 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get method with query params</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/get_tests/practica_get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Practice get</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get method with query params</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1434</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://www.thecocktaildb.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/json/v1/1/search.php?i=vodka&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1361</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">13:58:01.508 request:
+1 &gt; GET https://www.thecocktaildb.com/api/json/v1/1/search.php%3Fi=vodka
+1 &gt; Host: www.thecocktaildb.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:58:02.384 response time in milliseconds: 872
+1 &lt; 404
+1 &lt; Date: Fri, 02 Jun 2023 18:58:02 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: private
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ylqa4%2FfkTJovLiw%2FQA8UGbdu89lQJG5eWpvT5E%2BFX2Ww1kZKodL5bOpEyttb1eiQWKTmv4Ud%2FlzBCubwaoVF4bO4FaTeqOmK32DAowCXR2ZbQujkyZE2TkC5sK9zSf%2BSpfRzS%2BLxZl4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7d11eceb1db067cf-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt; 
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; 
+&lt;head&gt; 
+&lt;title&gt;IIS 10.0 Detailed Error - 404.0 - Not Found&lt;/title&gt; 
+&lt;style type=&quot;text/css&quot;&gt; 
+&lt;!-- 
+body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;} 
+code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
+.config_source code{font-size:.8em;color:#000000;} 
+pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
+ul,ol{margin:10px 0 10px 5px;} 
+ul.first,ol.first{margin-top:5px;} 
+fieldset{padding:0 15px 10px 15px;word-break:break-all;} 
+.summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
+legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
+legend{color:#333333;;margin:4px 0 8px -12px;_margin-top:0px; 
+font-weight:bold;font-size:1em;} 
+a:link,a:visited{color:#007EFF;font-weight:bold;} 
+a:hover{text-decoration:none;} 
+h1{font-size:2.4em;margin:0;color:#FFF;} 
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
+h4{font-size:1.2em;margin:10px 0 5px 0; 
+}#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;,Verdana,sans-serif; 
+ color:#FFF;background-color:#5C87B2; 
+}#content{margin:0 0 0 2%;position:relative;} 
+.summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
+.content-container p{margin:0 0 10px 0; 
+}#details-left{width:35%;float:left;margin-right:2%; 
+}#details-right{width:63%;float:left;overflow:hidden; 
+}#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
+ background-color:#5A7FA5;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
+ font-size:1em;color:#FFF;text-align:right; 
+}#server_version p{margin:5px 0;} 
+table{margin:4px 0 4px 0;width:100%;border:none;} 
+td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:normal;border:none;} 
+th{width:30%;text-align:right;padding-right:2%;font-weight:bold;} 
+thead th{background-color:#ebebeb;width:25%; 
+}#details-right th{width:20%;} 
+table tr.alt td,table tr.alt th{} 
+.highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
+.clear{clear:both;} 
+.preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
+--&gt; 
+&lt;/style&gt; 
+ 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;div id=&quot;content&quot;&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+  &lt;h3&gt;HTTP Error 404.0 - Not Found&lt;/h3&gt; 
+  &lt;h4&gt;The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.&lt;/h4&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Most likely causes:&lt;/h4&gt; 
+  &lt;ul&gt; 	&lt;li&gt;The directory or file specified does not exist on the Web server.&lt;/li&gt; 	&lt;li&gt;The URL contains a typographical error.&lt;/li&gt; 	&lt;li&gt;A custom filter or module, such as URLScan, restricts access to the file.&lt;/li&gt; &lt;/ul&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Things you can try:&lt;/h4&gt; 
+  &lt;ul&gt; 	&lt;li&gt;Create the content on the Web server.&lt;/li&gt; 	&lt;li&gt;Review the browser URL.&lt;/li&gt; 	&lt;li&gt;Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click &lt;a href=&quot;https://go.microsoft.com/fwlink/?LinkID=66439&quot;&gt;here&lt;/a&gt;. &lt;/li&gt; &lt;/ul&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+ 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Detailed Error Information:&lt;/h4&gt; 
+  &lt;div id=&quot;details-left&quot;&gt; 
+   &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Module&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;IIS Web Core&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Notification&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MapRequestHandler&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Handler&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;StaticFile&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Error Code&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;0x80070002&lt;/td&gt;&lt;/tr&gt; 
+     
+   &lt;/table&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;details-right&quot;&gt; 
+   &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Requested URL&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;http://www.thecocktaildb.com:80/api/json/v1/1/search.php?i=vodka&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Physical Path&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;C:\inetpub\thecocktaildb.com\api\json\v1\1\search.php?i=vodka&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Logon Method&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Anonymous&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Logon User&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Anonymous&lt;/td&gt;&lt;/tr&gt; 
+     
+   &lt;/table&gt; 
+   &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; 
+  &lt;/div&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+ 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;More Information:&lt;/h4&gt; 
+  This error means that the file or directory does not exist on the server. Create the file or directory and try the request again. 
+  &lt;p&gt;&lt;a href=&quot;https://go.microsoft.com/fwlink/?LinkID=62293&amp;amp;IIS70Error=404,0,0x80070002,17763&quot;&gt;View more information &amp;raquo;&lt;/a&gt;&lt;/p&gt; 
+   
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+&lt;/div&gt; 
+&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816&quot; integrity=&quot;sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7d11eceb1db067cf&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;e3db36df987945a696a3b7cfdfba9eaa&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">13:58:02.388 src/test/java/get_tests/practica_get.feature:9
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 872, url: https://www.thecocktaildb.com/api/json/v1/1/search.php%3Fi=vodka, response: 
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt; 
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; 
+&lt;head&gt; 
+&lt;title&gt;IIS 10.0 Detailed Error - 404.0 - Not Found&lt;/title&gt; 
+&lt;style type=&quot;text/css&quot;&gt; 
+&lt;!-- 
+body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;} 
+code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
+.config_source code{font-size:.8em;color:#000000;} 
+pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
+ul,ol{margin:10px 0 10px 5px;} 
+ul.first,ol.first{margin-top:5px;} 
+fieldset{padding:0 15px 10px 15px;word-break:break-all;} 
+.summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
+legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
+legend{color:#333333;;margin:4px 0 8px -12px;_margin-top:0px; 
+font-weight:bold;font-size:1em;} 
+a:link,a:visited{color:#007EFF;font-weight:bold;} 
+a:hover{text-decoration:none;} 
+h1{font-size:2.4em;margin:0;color:#FFF;} 
+h2{font-size:1.7em;margin:0;color:#CC0000;} 
+h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
+h4{font-size:1.2em;margin:10px 0 5px 0; 
+}#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:&quot;trebuchet MS&quot;,Verdana,sans-serif; 
+ color:#FFF;background-color:#5C87B2; 
+}#content{margin:0 0 0 2%;position:relative;} 
+.summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
+.content-container p{margin:0 0 10px 0; 
+}#details-left{width:35%;float:left;margin-right:2%; 
+}#details-right{width:63%;float:left;overflow:hidden; 
+}#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
+ background-color:#5A7FA5;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
+ font-size:1em;color:#FFF;text-align:right; 
+}#server_version p{margin:5px 0;} 
+table{margin:4px 0 4px 0;width:100%;border:none;} 
+td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:normal;border:none;} 
+th{width:30%;text-align:right;padding-right:2%;font-weight:bold;} 
+thead th{background-color:#ebebeb;width:25%; 
+}#details-right th{width:20%;} 
+table tr.alt td,table tr.alt th{} 
+.highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
+.clear{clear:both;} 
+.preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
+--&gt; 
+&lt;/style&gt; 
+ 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;div id=&quot;content&quot;&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+  &lt;h3&gt;HTTP Error 404.0 - Not Found&lt;/h3&gt; 
+  &lt;h4&gt;The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.&lt;/h4&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Most likely causes:&lt;/h4&gt; 
+  &lt;ul&gt; 	&lt;li&gt;The directory or file specified does not exist on the Web server.&lt;/li&gt; 	&lt;li&gt;The URL contains a typographical error.&lt;/li&gt; 	&lt;li&gt;A custom filter or module, such as URLScan, restricts access to the file.&lt;/li&gt; &lt;/ul&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Things you can try:&lt;/h4&gt; 
+  &lt;ul&gt; 	&lt;li&gt;Create the content on the Web server.&lt;/li&gt; 	&lt;li&gt;Review the browser URL.&lt;/li&gt; 	&lt;li&gt;Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click &lt;a href=&quot;https://go.microsoft.com/fwlink/?LinkID=66439&quot;&gt;here&lt;/a&gt;. &lt;/li&gt; &lt;/ul&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+ 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;Detailed Error Information:&lt;/h4&gt; 
+  &lt;div id=&quot;details-left&quot;&gt; 
+   &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Module&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;IIS Web Core&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Notification&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;MapRequestHandler&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Handler&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;StaticFile&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Error Code&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;0x80070002&lt;/td&gt;&lt;/tr&gt; 
+     
+   &lt;/table&gt; 
+  &lt;/div&gt; 
+  &lt;div id=&quot;details-right&quot;&gt; 
+   &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Requested URL&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;http://www.thecocktaildb.com:80/api/json/v1/1/search.php?i=vodka&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Physical Path&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;C:\inetpub\thecocktaildb.com\api\json\v1\1\search.php?i=vodka&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr class=&quot;alt&quot;&gt;&lt;th&gt;Logon Method&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Anonymous&lt;/td&gt;&lt;/tr&gt; 
+    &lt;tr&gt;&lt;th&gt;Logon User&lt;/th&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Anonymous&lt;/td&gt;&lt;/tr&gt; 
+     
+   &lt;/table&gt; 
+   &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; 
+  &lt;/div&gt; 
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+ 
+&lt;div class=&quot;content-container&quot;&gt; 
+ &lt;fieldset&gt;&lt;h4&gt;More Information:&lt;/h4&gt; 
+  This error means that the file or directory does not exist on the server. Create the file or directory and try the request again. 
+  &lt;p&gt;&lt;a href=&quot;https://go.microsoft.com/fwlink/?LinkID=62293&amp;amp;IIS70Error=404,0,0x80070002,17763&quot;&gt;View more information &amp;raquo;&lt;/a&gt;&lt;/p&gt; 
+   
+ &lt;/fieldset&gt; 
+&lt;/div&gt; 
+&lt;/div&gt; 
+&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816&quot; integrity=&quot;sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7d11eceb1db067cf&quot;,&quot;version&quot;:&quot;2023.4.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;e3db36df987945a696a3b7cfdfba9eaa&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt; 
+&lt;/html&gt; 
+
+src/test/java/get_tests/practica_get.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
