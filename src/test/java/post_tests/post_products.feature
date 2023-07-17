@@ -15,19 +15,19 @@ Feature: Post tests Fake Store API
     Given path '/products'
     And request
     """
-  {
-  "id": 15,
-  "title": "Mens Cotton Jacket",
-  "price": 109.95,
-  "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions",
-  "category": "men's clothing",
-  "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-  "rating": {
-  "rate": 3.9,
-  "count": 120
-  }
-  }
-  """
+    {
+    "id": 15,
+    "title": "Mens Cotton Jacket",
+    "price": 109.95,
+    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+    "rate": 3.9,
+    "count": 120
+    }
+    }
+    """
     And headers {Accept: 'application/json', Content-Type: 'application/json'}
     When method post
     Then status 200

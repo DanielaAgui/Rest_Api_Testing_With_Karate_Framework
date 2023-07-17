@@ -25,3 +25,8 @@ Feature: Get tests Fake Store API
     And header Accept = 'application/json'
     When method GET
     Then status 200
+
+  Scenario: Get request with headers
+    Given url 'https://reqres.in/api/users/2'
+    When method GET
+    Then status 200
