@@ -6,6 +6,6 @@ public class PostRunner {
 
     @Karate.Test
     public Karate testRunner() {
-        return Karate.run("classpath:post_tests/post_products.feature");
+        return Karate.run("classpath:post_tests/embedded_expresions.feature");
     }
 }
