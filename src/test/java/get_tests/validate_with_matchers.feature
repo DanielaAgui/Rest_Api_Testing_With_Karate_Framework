@@ -9,10 +9,15 @@ Feature: Validate the get endpoint response
     And header Accept = 'application/json'
     When method GET
     Then status 200
+    #El campo está presente en la respuesta
     And match response.[0].category == '#present'
+    #El campo no es nulo
     And match response.[2].rating.rate == '#notnull'
+    #Ignoramos el campo de la respuesta
     And match response.[3].id == '#ignore'
+    #El campo es un array
     And match response.[0].rating[*] == '#array'
+    #El campo es un numero
     And match response.[0].price == '#number'
 
       #https://github.com/karatelabs/karate#self-validation-expressions
@@ -21,10 +26,10 @@ Feature: Validate the get endpoint response
     And header Accept = 'application/json'
     When method GET
     Then status 200
-      #Expresiones JavaScript que evalúen un valor verdadero o falso
-      #El _ significa el valor que se está validando
+    #Expresiones JavaScript que evalúen un valor verdadero o falso
+    #El _ significa el valor que se está validando
     And match response.[0].id == '#? _ == 1'
-      #Valida longitud
+    #Valida longitud
     And match response.[0].title == '#string? _.length >= 1'
 
       #https://github.com/karatelabs/karate#schema-validation
@@ -33,7 +38,7 @@ Feature: Validate the get endpoint response
     And header Accept = 'application/json'
     When method GET
     Then status 200
-      #Valida si es un array
+    #Valida si es un array
     And match response == '#[]'
-      #Valida si es un array de x longitud
+    #Valida si es un array de x longitud
     And match response == '#[4]'

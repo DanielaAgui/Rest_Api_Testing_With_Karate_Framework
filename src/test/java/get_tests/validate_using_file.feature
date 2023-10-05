@@ -7,7 +7,7 @@ Feature: Validation using json file
     Given path '/products/1'
     When method GET
     Then status 200
-      #Variable para leer el archivo json
+    #Variable para leer el archivo json
     * def actualResponse = read('classpath:JsonResponse.json')
     And match response == actualResponse
 
