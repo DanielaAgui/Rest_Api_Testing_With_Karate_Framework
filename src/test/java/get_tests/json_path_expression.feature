@@ -9,6 +9,7 @@ Feature: To use the Json path expression
     When method get
     Then status 200
     #Usamos JsonPath para consultar elementos en un json
+    #karate.jsonPath(response, jsonPath)
     #Buscamos todos los titulos
     * def jsonId = karate.jsonPath(response, "$..title")
     #Buscamos todos los elementos iguales a
