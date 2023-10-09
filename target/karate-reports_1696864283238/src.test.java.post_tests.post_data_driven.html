@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("f9dd4b53-a84f-4208-bd34-b1dd0e842ad1",{name:"daaguilar"});
+    posthog.capture("report_feature",{karate_version:"1.3.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.post_tests.post_data_driven</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-09 10:10:19 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:11]"><span>[1.1:11]</span> <span>Post test with template</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:12]"><span>[1.2:12]</span> <span>Post test with template</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.1:20]"><span>[2.1:20]</span> <span>Post test with template</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.2:21]"><span>[2.2:21]</span> <span>Post test with template</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/post_tests/post_data_driven.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create test with template</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:11]</span>
+                <span class="scenario-name">Post test with template</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1564</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">70</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1494</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.6">10:09:46.564 request:
+1 &gt; POST https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post
+1 &gt; Host: 0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:09:47.584 response time in milliseconds: 1018
+1 &lt; 200
+1 &lt; Date: Mon, 09 Oct 2023 15:09:47 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 24
+1 &lt; Connection: keep-alive
+1 &lt; x-srv-trace: v=1;t=cabf91df84e47dc5
+1 &lt; x-srv-span: v=1;s=1600a92474dc8fa4
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-RateLimit-Limit: 120
+1 &lt; X-RateLimit-Remaining: 119
+1 &lt; X-RateLimit-Reset: 1696864247
+1 &lt; ETag: W/&quot;18-6hG53ZDGwTHDa8/uVBF8o0Gfc/0&quot;
+1 &lt; Vary: Accept-Encoding
+{
+    &quot;msg&quot;: &quot;Success&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:12]</span>
+                <span class="scenario-name">Post test with template</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>10448</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10447</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.6">10:09:47.616 request:
+1 &gt; POST https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post
+1 &gt; Host: 0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:09:58.061 response time in milliseconds: 10444
+1 &lt; 500
+1 &lt; Date: Mon, 09 Oct 2023 15:09:58 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-srv-trace: v=1;t=d9ebd491b5d0ca3a
+1 &lt; x-srv-span: v=1;s=8416b364adcd8c59
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-RateLimit-Limit: 120
+1 &lt; X-RateLimit-Remaining: 118
+1 &lt; X-RateLimit-Reset: 1696864247
+1 &lt; ETag: W/&quot;95-FTTB7abj+CXY1fx4yxujyq5gGQg&quot;
+1 &lt; Vary: Accept-Encoding
+{&quot;error&quot;:{&quot;name&quot;:&quot;serverError&quot;,&quot;message&quot;:&quot;Try sending it again. If you keep getting this error, contact support.&quot;,&quot;header&quot;:&quot;Unable to mock request&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">10:09:58.062 src/test/java/post_tests/post_data_driven.feature:7
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 10444, url: https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post, response: 
+{&quot;error&quot;:{&quot;name&quot;:&quot;serverError&quot;,&quot;message&quot;:&quot;Try sending it again. If you keep getting this error, contact support.&quot;,&quot;header&quot;:&quot;Unable to mock request&quot;}}
+src/test/java/post_tests/post_data_driven.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:20]</span>
+                <span class="scenario-name">Post test with template</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>10654</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10654</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">10:09:58.070 request:
+1 &gt; POST https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post
+1 &gt; Host: 0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:10:08.722 response time in milliseconds: 10651
+1 &lt; 500
+1 &lt; Date: Mon, 09 Oct 2023 15:10:08 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-srv-trace: v=1;t=d58d306693f07a8a
+1 &lt; x-srv-span: v=1;s=048f1abcad839a41
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-RateLimit-Limit: 120
+1 &lt; X-RateLimit-Remaining: 117
+1 &lt; X-RateLimit-Reset: 1696864247
+1 &lt; ETag: W/&quot;95-FTTB7abj+CXY1fx4yxujyq5gGQg&quot;
+1 &lt; Vary: Accept-Encoding
+{&quot;error&quot;:{&quot;name&quot;:&quot;serverError&quot;,&quot;message&quot;:&quot;Try sending it again. If you keep getting this error, contact support.&quot;,&quot;header&quot;:&quot;Unable to mock request&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status &#39;200&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">10:10:08.723 src/test/java/post_tests/post_data_driven.feature:17
+Then status &#39;200&#39;
+no step-definition method match found for: status &#39;200&#39;
+src/test/java/post_tests/post_data_driven.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:21]</span>
+                <span class="scenario-name">Post test with template</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>10320</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10319</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.16">10:10:08.730 request:
+1 &gt; POST https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post
+1 &gt; Host: 0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:10:19.046 response time in milliseconds: 10316
+1 &lt; 500
+1 &lt; Date: Mon, 09 Oct 2023 15:10:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; Connection: keep-alive
+1 &lt; x-srv-trace: v=1;t=01a2c2bd3f861a5e
+1 &lt; x-srv-span: v=1;s=97aad9a3b66db016
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-RateLimit-Limit: 120
+1 &lt; X-RateLimit-Remaining: 116
+1 &lt; X-RateLimit-Reset: 1696864247
+1 &lt; ETag: W/&quot;95-FTTB7abj+CXY1fx4yxujyq5gGQg&quot;
+1 &lt; Vary: Accept-Encoding
+{&quot;error&quot;:{&quot;name&quot;:&quot;serverError&quot;,&quot;message&quot;:&quot;Try sending it again. If you keep getting this error, contact support.&quot;,&quot;header&quot;:&quot;Unable to mock request&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status &#39;201&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.17">10:10:19.047 src/test/java/post_tests/post_data_driven.feature:17
+Then status &#39;201&#39;
+no step-definition method match found for: status &#39;201&#39;
+src/test/java/post_tests/post_data_driven.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
