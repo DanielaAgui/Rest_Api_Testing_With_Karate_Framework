@@ -1,39 +1,38 @@
 Feature: Create test with template
 
   #Escenario con datos de entrada
-  Scenario Outline: Post test with template
-    Given url 'https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post'
+  Scenario Outline: Post test with template method <method>
+    Given url 'https://fakestoreapi.com/products'
+    #Usamos las variables del ejemplo <nombre_variable>
+    When method <method>
+    Then status <status>
+    Examples:
+      | method | status |
+      | post   | 200    |
+      | get    | 200    |
+
+  Scenario Outline: Data driven test
+    Given url 'https://restful-booker.herokuapp.com/auth'
+    #Usamos las variables de los ejemplos como expresiones embebidas dentro de la request
+    And request {"username": '#(username)', "password": '#(password)'}
     When method post
     Then status 200
     And print response
-    #Siempre tiene que ir con datos como ejemplos
     Examples:
-      | id   | type       |
-      | 5003 | "Cake"     |
-      | 5004 | "Popsicle" |
+      | username | password    |
+      | "user1"  | "password1" |
+      | "user2"  | "password2" |
+      | "user3"  | "password3" |
 
-  #Usar una de las variables del ejemplo <nombre_variable>
-  Scenario Outline: Post test with template
-    Given url 'https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io/post'
+  Scenario Outline: Data driven test with external file
+    Given url 'https://restful-booker.herokuapp.com/auth'
+    And request {"username": '#(username)', "password": '#(password)'}
     When method post
     Then status 200
+    And print response
+    #Leemos el archivo externo en el ejemplo para llenar las variables
     Examples:
-      | id   | type       |
-      | "5003" | "Cake"     |
-      | "5004" | "Popsicle" |
-
-  Scenario Outline: Data driven test
-    Given url 'https://0bad87cb-e6b4-4509-86d1-dbc4e36b9340.mock.pstmn.io'
-    And path '/post'
-    #Usamos las variables de los ejemplos como expresiones embebidas dentro de la request
-    And request { "id": '#(id)', "type": '#(type)' }
-    When method post
-    Then status 200
-    And print "response ", response
-    Examples:
-      | id   | type       |
-      | "5005" | "Cake"     |
-      | "5006" | "Popsicle" |
+      | read('classpath:testData.csv') |
 
 
 
